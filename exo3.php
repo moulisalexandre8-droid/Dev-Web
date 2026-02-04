@@ -110,7 +110,7 @@ echo "$politesse $prenom, nous sommes le $date<br />Il est actuellement $heure:$
 
    // Exercice 3 : message selon âge, sexe, mariage
    $age = 25;
-   $sexe = 'femme'; // 'homme' ou 'femme'
+   $sexe = 'femme';
    $isMariee = true;
    if ($sexe === 'homme') {
       if ($age < 18) {

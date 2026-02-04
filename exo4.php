@@ -26,34 +26,34 @@
  <strong>Résultat :</strong>
 
  <?php
-   <!-- 1) Sans boucle -->
-<?php
+ 
+   //<!-- 1) Sans boucle -->
+
 echo "5! <br />\n";
 echo "4! <br />\n";
 echo "3! <br />\n";
 echo "2! <br />\n";
 echo "1! <br />\n";
 echo "BONNE ANNÉE !!! <br /><br />\n";
-?>
 
-<!-- 2) Avec WHILE -->
-<?php
+
+//<!-- 2) Avec WHILE -->
+
 $i = 5;
 while ($i > 0) {
   echo $i . "! <br />\n";
   $i--;
 }
 echo "BONNE ANNÉE !!! <br /><br />\n";
-?>
 
-<!-- 3) Avec FOR -->
-<?php
+
+//<!-- 3) Avec FOR -->
+
 for ($i = 5; $i > 0; $i--) {
   echo $i . "! <br />\n";
 }
 echo "BONNE ANNÉE !!! <br /><br />\n";
 ?>
-   ?>
 
 
 
@@ -74,7 +74,7 @@ echo "BONNE ANNÉE !!! <br /><br />\n";
 
 
 <?php
-$x = 10; // Valeur de X, modifiable
+$x = 10; 
 $somme = 0;
 $affichage = '';
 for ($i = 1; $i <= $x; $i++) {
