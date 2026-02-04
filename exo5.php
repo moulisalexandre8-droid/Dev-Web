@@ -18,6 +18,12 @@
 
  <?php
     // Votre code ici
+    $jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+    echo '<ul>';
+    foreach ($jours as $jour) {
+        echo "<li>$jour</li>";
+    }
+    echo '</ul>';
     ?>
 
 
@@ -43,7 +49,19 @@
 
  <?php
     // Votre code ici
-    ?>
+
+// Tableaux des jours et des mois
+$jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+$mois = ["", "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+date_default_timezone_set('Europe/Paris');
+$jourNum = date('N'); 
+$jourNom = $jours[$jourNum - 1];
+$jour = date('d');
+$moisNum = date('n'); 
+$moisNom = $mois[$moisNum];
+$annee = date('Y');
+echo "Nous sommes le <code>$jourNom</code> <code>$jour</code> <code>$moisNom</code> <code>$annee</code>";
+?>
 
  <h2>Exercice 3 </h2>
  <p> A l'aide du tableau suivant :
@@ -56,9 +74,17 @@ $tab= [
 </pre>
  <p> Afficher les phrases du type : "Paul Dupont a 27 ans et habite à Paris", à l'aide d'une boucle foreach</p>
  <strong>Résultat :</strong>
-
+ 
  <?php
     // Votre code ici
+        $tab= [
+            "Dupont"=> ["Paul","Paris",27],
+            "Schmoll"=>["Kirk","Berlin",35],
+            "Smith"=>["Stan","Londres",45] 
+        ];
+        foreach ($tab as $nom => $infos) {
+            echo "$infos[0] $nom a $infos[2] ans et habite à $infos[1].<br>";
+        }
 
     ?>
 
